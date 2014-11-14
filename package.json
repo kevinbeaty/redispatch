@@ -1,0 +1,32 @@
+{
+  "name": "redispatch",
+  "version": "0.0.1",
+  "description": "Dispatch Functions with late registration",
+  "main": "redispatch.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinbeaty/redispatch"
+  },
+  "keywords": [
+    "dispatch",
+    "singledispatch",
+    "multidispatch",
+    "multimethod",
+    "method"
+  ],
+  "author": "Kevin Beaty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevinbeaty/redispatch/issues"
+  },
+  "homepage": "http://simplectic.com/projects/redispatch/",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "underscore": "~1.7.0",
+    "tape": "~3.0.0"
+  }
+}
