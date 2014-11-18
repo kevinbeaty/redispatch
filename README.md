@@ -19,7 +19,7 @@ empty(null);
 empty([1,2,3]);
 // null
 
-dispatch.register(function(arr){
+empty.register(function(arr){
   if(Array.isArray(arr)){
     return [];
   }

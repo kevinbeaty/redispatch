@@ -4,7 +4,16 @@ var undef;
 module.exports = redispatch;
 
 function redispatch(){
-  var fns = [], d = function(){
+  var fns = [],
+      d = dispatch(fns);
+  d.register = function(fn){
+    fns.push(fn);
+  };
+  return d;
+}
+
+function dispatch(fns){
+  return function(){
     var args = arguments, i = fns.length, result;
     for(; i-- ;){
       result = fns[i].apply(this, args);
@@ -13,9 +22,4 @@ function redispatch(){
       }
     }
   };
-
-  d.register = function(fn){
-    fns.push(fn);
-  };
-  return d;
 }

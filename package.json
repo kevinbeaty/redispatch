@@ -1,6 +1,6 @@
 {
   "name": "redispatch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dispatch Functions with late registration",
   "main": "redispatch.js",
   "scripts": {
